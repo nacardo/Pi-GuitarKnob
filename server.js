@@ -1,7 +1,5 @@
 const express = require('express');
-// const bodyParser = require('body-parser');
 const path = require('path');
-// var volumes = require('Volumes');
 
 
 const app = express();
