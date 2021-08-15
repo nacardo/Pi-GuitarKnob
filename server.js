@@ -1,6 +1,8 @@
 const express = require('express');
 const path = require('path');
+const Gpio = require('pigpio').Gpio;
 
+const motor = new Gpio(10, {mode: Gpio.OUTPUT});
 
 const app = express();
 
@@ -18,7 +20,29 @@ app.post('/vol', (req, res) => {
     var item = req.body.slide;
     console.log(item);
     res.redirect('/');
+    return item;
 });
+
+let pulseWidth = 1000;
+let increment = 100;
+
+// var servoAngle = 0;
+
+// function scale(value) {
+//     new_angle = value / 270
+// }
+
+
+setInterval(() => {
+  motor.servoWrite(pulseWidth);
+
+  pulseWidth += increment;
+  if (pulseWidth >= 2000) {
+    increment = -100;
+  } else if (pulseWidth <= 1000) {
+    increment = 100;
+  }
+}, 1000);
 
 // app.post('/slider', (req, res) => {
 //     var slide = req.body.newSlider;
