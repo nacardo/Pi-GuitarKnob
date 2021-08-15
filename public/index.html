@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Volume</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="../Volumes.js"></script> -->
+</head>
+<body>
+    <div class="header"></div>
+    <section class="main">
+        <!-- <div class="knob">
+        <h1 id="volume">100</h2>
+        <img class="dial bot" src="assets/dial/circ1.svg" alt="">
+        <img class="dial mid" src="assets/dial/circ2.svg" alt="">
+        <img class="dial top" src="assets/dial/circ3.svg" alt="">
+        <img class="dial needle" src="assets/dial/needle.svg" alt=""> -->
+        <div class="circ"></div>
+        <div>
+            <form action="/vol" method="post">
+                <input name="slide" type="range" id="vol-slider" min="0" max="100">
+                <h2 id="vol-lvl">Master Volume: 0</h2>
+                <button type="submit" name="testBtn">Set Volume</button>
+            
+            </form>
+        
+        </div>
+    </section>
+    <!-- <form action="/" method="post">
+        <input value="" type="text" name="newItem">
+        <button type="submit" name="testBtn">Server Test</button>
+    
+    </form> -->
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

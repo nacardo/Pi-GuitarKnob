@@ -1,0 +1,92 @@
+*, body {
+    background-color: #474747;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: red;
+}
+
+.header {
+    background-color: red;
+    height: 10vh;
+}
+
+.main {
+    text-align: center;
+}
+
+#vol-slider {
+    margin: 10% auto 20px;
+}
+
+form {
+    margin: 50px auto;
+    text-align: center;
+}
+
+input {
+    color: white;
+}
+button {
+    margin: 20px auto;
+    color: white;
+    font-size: large;
+}
+
+/* .circ {
+    background-color: red;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 40%, rgba(255,235,0,1) 100%); 
+    width: 300px;
+    height: 300px;
+    margin: 10% auto 5%;
+    border-radius: 100%;
+}
+
+.circ:hover {
+    transition: all ease-in;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 40%, rgba(255,235,0,1) 100%); 
+    border-radius:  40%;
+}
+
+.knob {
+    margin: 10% auto 10px;
+    position: relative;
+    background-color: black;
+    height: 30vw;
+    width: 30vw;
+    border-radius: 100%;
+   
+}
+
+.dial {
+    position: absolute;
+}
+
+.needle {
+    z-index: 9;
+}
+
+.bot {
+    z-index: 5;
+}
+
+.mid {
+    z-index: 6;
+}
+
+.top {
+    z-index: 8;
+} */
+
+#volume {
+    background-color: black;
+    color: white;
+    position: absolute;
+    display: inline;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    
+}
